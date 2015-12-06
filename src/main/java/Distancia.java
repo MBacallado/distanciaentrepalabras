@@ -1,6 +1,12 @@
 
 public class Distancia {
 	
+	/**
+	 * 
+	 * @param str1 primera cadena a comparar 
+	 * @param str2 segunda cadena a comparar 
+	 * @return int representa la distancia entre las dos cadenas pasadas por parámetro
+	 */
 	public int DistanciaEntrePalabras(String str1,String str2){
     	int [][] d = new int [str1.length()+1][str2.length()+1];
     	int i,j;
@@ -21,6 +27,13 @@ public class Distancia {
     	
     }
     
+	/**
+	 * 
+	 * @param a (fil-1 col ) + 1
+	 * @param b (fil col-1 ) + 1
+	 * @param c (fil-1 col-1 ) + (0 si los dos caracteres son iguales o 1 si son diferentes)
+	 * @return int menor valor de los tres parámetros 
+	 */
     private int minimum(int a, int b, int c) {                            
         return Math.min(Math.min(a, b), c);                                      
     } 
